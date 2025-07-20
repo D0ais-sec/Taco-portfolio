@@ -1,4 +1,3 @@
-/* RESET AND BASE STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +5,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Orbitron', sans-serif;
   background: #000;
   color: #fff;
@@ -17,17 +14,17 @@ body {
   flex-direction: column;
 }
 
-/* FULL-SCREEN CONTAINER */
 .space-container {
-  background: url('assets/background.png') no-repeat center center/cover;
+  background: url('assets/globe.png') no-repeat center center/contain,
+              url('assets/background.png') no-repeat center center/cover;
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
+  background-blend-mode: lighten;
 }
 
-/* HEADER */
 header {
   position: fixed;
   top: 20px;
@@ -51,34 +48,24 @@ header {
   color: #000;
 }
 
-/* MAIN CONTENT */
-.main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-}
-
 .section-title {
   font-size: 3rem;
   margin-top: 60px;
   text-shadow: 0 0 15px #0ff;
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-align: center;
 }
 
 .project-title {
   font-size: 1.6rem;
   color: #0ff;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-/* PLANET SECTION */
 .planet {
   position: relative;
   margin: 30px auto;
@@ -87,13 +74,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.globe {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  animation: rotate 60s linear infinite;
 }
 
 .astronaut {
@@ -150,19 +130,12 @@ header {
   text-transform: uppercase;
 }
 
-/* ANIMATIONS */
 @keyframes float {
   0% { transform: translate(-50%, -10px); }
   50% { transform: translate(-50%, -20px); }
   100% { transform: translate(-50%, -10px); }
 }
 
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
@@ -180,7 +153,6 @@ footer a:hover {
   text-shadow: 0 0 5px #0ff;
 }
 
-/* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
   .section-title {
     font-size: 2rem;
@@ -189,10 +161,6 @@ footer a:hover {
 
   .project-title {
     font-size: 1.2rem;
-  }
-
-  .globe {
-    max-width: 300px;
   }
 
   .astronaut {
