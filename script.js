@@ -1,2 +1,3 @@
-// You can add animation, typing effects or interactivity here
-console.log("Welcome to Antonio's Space Portfolio 🚀");
+document.querySelector('.click-to-open').addEventListener('click', () => {
+  alert('Launching Project 1: DOC-UDI!');
+});
