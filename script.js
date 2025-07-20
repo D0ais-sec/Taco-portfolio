@@ -1,11 +1,13 @@
-document.getElementById('btnProjects').addEventListener('click', () => {
-  window.location.href = '#projects'; // Replace with actual URL if needed
+const clickMeBtn = document.getElementById('clickMe');
+const floatingMenu = document.getElementById('floatingMenu');
+const closeBtn = document.getElementById('closeMenu');
+
+clickMeBtn.addEventListener('click', () => {
+  floatingMenu.style.display = 'flex';
+  clickMeBtn.style.display = 'none';
 });
 
-document.getElementById('btnCV').addEventListener('click', () => {
-  window.location.href = '#cv';
-});
-
-document.getElementById('btnReport').addEventListener('click', () => {
-  window.location.href = '#report';
+closeBtn.addEventListener('click', () => {
+  floatingMenu.style.display = 'none';
+  clickMeBtn.style.display = 'block';
 });

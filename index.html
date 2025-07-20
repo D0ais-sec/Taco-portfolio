@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="space-container" id="spaceContainer">
+  <div class="space-container">
     <header>
       <a href="#contact" class="contact-link">Contact Me</a>
     </header>
@@ -18,27 +18,23 @@
       <p class="project-title">PORTFOLIO</p>
 
       <div class="planet">
-  <img src="assets/astronaut.png" alt="Astronaut" class="astronaut" />
+        <img src="assets/astronaut.png" alt="Astronaut" class="astronaut" />
+        <div class="click-to-open" id="clickMe">CLICK<br>ME</div>
+      </div>
 
-  <!-- Floating buttons positioned over Earth background -->
-  <div class="float-button" id="btnProjects" style="top: 50%; left: 18%;">PROJECTS</div>
-  <div class="float-button" id="btnCV" style="top: 48%; left: 48%;">CV</div>
-  <div class="float-button" id="btnReport" style="top: 51%; left: 78%;">FINAL REPORT</div>
-</div>
-
+      <!-- Floating Menu -->
+      <div class="floating-menu" id="floatingMenu">
+        <div class="close-btn" id="closeMenu">✕</div>
+        <a href="#projects" class="floating-label">PROJECTS</a>
+        <a href="#cv" class="floating-label">CV</a>
+        <a href="#final-report" class="floating-label">FINAL REPORT</a>
+      </div>
 
       <div class="nav-buttons">
         <img src="assets/left.png" class="arrow left" />
         <img src="assets/right.png" class="arrow right" />
       </div>
     </section>
-
-    <!-- Floating Menu -->
-    <div class="menu-overlay hidden" id="menuOverlay">
-      <div class="menu-item" onclick="location.href='#projects'">Projects</div>
-      <div class="menu-item" onclick="location.href='#cv'">Curriculum Vitae</div>
-      <div class="menu-item" onclick="location.href='#report'">Final Report</div>
-    </div>
   </div>
 
   <footer id="contact">
