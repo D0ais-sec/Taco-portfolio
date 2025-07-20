@@ -252,3 +252,64 @@ button:hover {
 .buttons .btn:hover {
   opacity: 0.8;
 }
+.certificates {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #66ffff, #bb66ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s, background 0.3s;
+  max-width: 300px;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.certificate-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.certificate-card .btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  background: linear-gradient(90deg, #7f66ff, #7fdfff);
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
