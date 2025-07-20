@@ -8,28 +8,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="space-container">
+  <div class="space-container" id="spaceContainer">
     <header>
       <a href="#contact" class="contact-link">Contact Me</a>
     </header>
 
     <section class="planet-section">
-  <h1 class="section-title">Antonio Luis P. Taco</h1>
-  <p></p>
-  <p></p>
-  <p class="project-title">PORTFOLIO</p>
+      <h1 class="section-title">Antonio Luis P. Taco</h1>
+      <p class="project-title">PORTFOLIO</p>
 
-  <div class="planet">
-    <img src="assets/astronaut.png" alt="Astronaut" class="astronaut" />
-    <div class="click-to-open">CLICK<br>ME</div>
-  </div>
+      <div class="planet">
+        <img src="assets/astronaut.png" alt="Astronaut" class="astronaut" />
+        <div class="click-to-open">CLICK<br>ME</div>
+      </div>
 
-  <div class="nav-buttons">
-    <img src="assets/left.png" class="arrow left" />
-    <img src="assets/right.png" class="arrow right" />
-  </div>
-</section>
+      <div class="nav-buttons">
+        <img src="assets/left.png" class="arrow left" />
+        <img src="assets/right.png" class="arrow right" />
+      </div>
+    </section>
 
+    <!-- Floating Menu -->
+    <div class="menu-overlay hidden" id="menuOverlay">
+      <div class="menu-item" onclick="location.href='#projects'">Projects</div>
+      <div class="menu-item" onclick="location.href='#cv'">Curriculum Vitae</div>
+      <div class="menu-item" onclick="location.href='#report'">Final Report</div>
+    </div>
   </div>
 
   <footer id="contact">

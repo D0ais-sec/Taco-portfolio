@@ -180,3 +180,46 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+/* === Zoom and Menu === */
+.hidden {
+  display: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  z-index: 20;
+  animation: fadeIn 1s ease forwards;
+}
+
+.menu-item {
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid #0ff;
+  padding: 20px 30px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-shadow: 0 0 10px #0ff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.menu-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #0ff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
