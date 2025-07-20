@@ -1,14 +1,11 @@
-const clickMeBtn = document.querySelector('.click-to-open');
-const menuOverlay = document.getElementById('menuOverlay');
-const spaceContainer = document.getElementById('spaceContainer');
+document.getElementById('btnProjects').addEventListener('click', () => {
+  window.location.href = '#projects'; // Replace with actual URL if needed
+});
 
-clickMeBtn.addEventListener('click', () => {
-  // Zoom in
-  spaceContainer.style.transform = 'scale(3)';
-  spaceContainer.style.transformOrigin = 'center center';
+document.getElementById('btnCV').addEventListener('click', () => {
+  window.location.href = '#cv';
+});
 
-  // After zoom, show menu
-  setTimeout(() => {
-    menuOverlay.classList.remove('hidden');
-  }, 2000);
+document.getElementById('btnReport').addEventListener('click', () => {
+  window.location.href = '#report';
 });
