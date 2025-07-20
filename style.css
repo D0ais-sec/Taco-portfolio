@@ -70,8 +70,10 @@ main {
 .highlight {
   background: linear-gradient(90deg, #66ffff, #bb66ff);
   -webkit-background-clip: text;
+  background-clip: text; /* ✅ standard property for compatibility */
   -webkit-text-fill-color: transparent;
 }
+
 
 .hero p {
   margin: 20px 0;
