@@ -1,13 +1,18 @@
-const clickMeBtn = document.getElementById('clickMe');
-const floatingMenu = document.getElementById('floatingMenu');
-const closeBtn = document.getElementById('closeMenu');
+document.addEventListener('DOMContentLoaded', () => {
+  const clickMeBtn = document.getElementById('clickMe');
+  const floatingMenu = document.getElementById('floatingMenu');
+  const closeBtn = document.getElementById('closeMenu');
 
-clickMeBtn.addEventListener('click', () => {
-  floatingMenu.style.display = 'flex';
-  clickMeBtn.style.display = 'none';
-});
-
-closeBtn.addEventListener('click', () => {
+  // Ensure menu is hidden on page load (optional safety)
   floatingMenu.style.display = 'none';
-  clickMeBtn.style.display = 'block';
+
+  clickMeBtn.addEventListener('click', () => {
+    floatingMenu.style.display = 'flex';
+    clickMeBtn.style.display = 'none';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    floatingMenu.style.display = 'none';
+    clickMeBtn.style.display = 'block';
+  });
 });
