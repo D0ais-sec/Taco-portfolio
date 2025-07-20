@@ -1,3 +1,8 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,13 +12,16 @@ body {
   overflow-x: hidden;
 }
 
+/* Space background container */
 .space-container {
   background: url('assets/background.png') no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
   text-align: center;
+  padding-bottom: 4rem;
 }
 
+/* Header button */
 header {
   position: absolute;
   top: 20px;
@@ -27,7 +35,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid #fff;
-  padding: 5px 10px;
+  padding: 6px 14px;
   border-radius: 5px;
   transition: background 0.3s;
 }
@@ -36,28 +44,37 @@ header {
   color: #000;
 }
 
+/* Section titles */
 .section-title {
-  font-size: 2rem;
-  margin-top: 80px;
+  font-size: 3vw;
+  margin-top: 12vh;
   text-shadow: 0 0 15px #0ff;
+  color: #0ff;
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 2vw;
   color: #0ff;
   margin: 1rem 0;
   letter-spacing: 1px;
 }
 
+/* Planet container */
 .planet {
   position: relative;
-  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto 0 auto;
 }
 
+/* Globe image */
 .globe {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
+/* Floating astronaut */
 .astronaut {
   position: absolute;
   top: -90px;
@@ -67,27 +84,36 @@ header {
   animation: float 3s ease-in-out infinite;
 }
 
+/* Click overlay */
 .click-to-open {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -10%);
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #fff;
   text-shadow: 0 0 8px #0ff;
   border: 2px dashed #0ff;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: 8px;
   cursor: pointer;
+  background: rgba(0, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
 }
 
+/* Arrows */
 .nav-buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .arrow {
-  width: 30px;
-  margin: 0 20px;
+  width: 8vw;
+  max-width: 40px;
+  min-width: 24px;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -95,11 +121,13 @@ header {
   transform: scale(1.2);
 }
 
+/* Scroll label */
 .scroll-text {
-  margin-top: 40px;
-  font-size: 0.75rem;
+  margin-top: 30px;
+  font-size: 1rem;
   color: #aaa;
   letter-spacing: 2px;
+  font-family: monospace;
 }
 
 /* Floating animation */
@@ -109,6 +137,7 @@ header {
   100% { transform: translate(-50%, -10px); }
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
@@ -121,4 +150,39 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Mobile-friendly tweaks */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 7vw;
+    margin-top: 14vh;
+  }
+
+  .project-title {
+    font-size: 5vw;
+  }
+
+  .click-to-open {
+    font-size: 4vw;
+    padding: 8px 12px;
+  }
+
+  .scroll-text {
+    font-size: 3vw;
+  }
+
+  .contact-link {
+    font-size: 3vw;
+    padding: 6px 10px;
+  }
+
+  .astronaut {
+    width: 20vw;
+    max-width: 80px;
+  }
+
+  .arrow {
+    width: 14vw;
+  }
 }
