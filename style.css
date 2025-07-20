@@ -194,3 +194,44 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+.floating-menu {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #0ff;
+}
+
+.floating-label {
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  padding: 10px 20px;
+  border: 2px dashed #0ff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.floating-label:hover {
+  transform: scale(1.1);
+}
+
+.close-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
