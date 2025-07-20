@@ -1,44 +1,89 @@
+/* Global Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('assets/space-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+/* Header */
+.space-header {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.space-header .avatar {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 nav a {
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
+  margin: 0 1rem;
+  color: #00d9ff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
+nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00d9ff;
+}
+
+.tagline {
+  margin-top: -10px;
+  font-style: italic;
+  color: #ddd;
+}
+
+/* Section Styling */
 section {
-    padding: 2rem;
+  padding: 3rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2rem;
+  border-radius: 12px;
 }
 
+h2 {
+  border-bottom: 2px solid #00d9ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Projects */
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
 }
 
 .project {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    text-align: center;
+  background-color: #111;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s;
+  text-align: center;
 }
 
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00d9ff;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 0.9rem;
 }

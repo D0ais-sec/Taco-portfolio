@@ -1,2 +1,2 @@
-// You can add animations, interactivity, or dynamic content here.
-console.log("Portfolio Loaded");
+// You can add animation, typing effects or interactivity here
+console.log("Welcome to Antonio's Space Portfolio 🚀");
