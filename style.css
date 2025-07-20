@@ -40,9 +40,10 @@ header {
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-top: 20px;
-  text-shadow: 0 0 15px #0ff;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #00ffff;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
 }
 
 .project-title {
@@ -52,24 +53,34 @@ header {
   letter-spacing: 1px;
 }
 
+.planet-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
 .planet {
   position: relative;
   width: 100%;
-  height: 100vh; /* full screen height */
+  height: auto;
+  flex: 1;
 }
 
 
 .astronaut {
-  position: absolute;
-  top: -90px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: -10px;
   width: 80px;
   animation: float 3s ease-in-out infinite;
 }
 
 .click-to-open {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -80,11 +91,11 @@ header {
   border: 3px dashed #00ffff;
   padding: 18px 24px;
   border-radius: 12px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
   z-index: 9;
 }
+
 
 
 .nav-buttons {
@@ -99,6 +110,7 @@ header {
   padding: 0 10px;
   z-index: 10;
 }
+
 
 .arrow {
   width: 60px;
