@@ -256,72 +256,81 @@ button:hover {
 .buttons .btn:hover {
   opacity: 0.8;
 }
+/* === Certificates Section Styled Like Projects === */
 .certificates {
-  padding: 40px 20px;
-  background-color: #1e1e2f;
-  color: #fff;
+  padding: 60px 20px;
+  background: #0a0a23;
+  color: #ffffff;
   text-align: center;
 }
 
-.certificates h2 {
+.section-title {
   font-size: 2.2em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.certificates-grid {
+.certificate-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 30px;
   justify-items: center;
 }
 
-
-
 .certificate-card {
-  background-color: #2e2e4e;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  width: 100%;
+  background: linear-gradient(145deg, #161632, #0f0f25);
+  border-radius: 16px;
+  padding: 24px;
   max-width: 320px;
+  box-shadow: 0 0 10px rgba(91, 33, 182, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .certificate-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(91, 33, 182, 0.5);
 }
 
-.certificate-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
+.certificate-content h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.certificate-card img {
-  width: 100%;
-  height: auto;
-  display: block;
+.certificate-content p {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-bottom: 12px;
 }
 
-.certificate-card h3 {
-  font-size: 1.1em;
-  margin: 15px;
+.badge-group {
+  margin-bottom: 16px;
 }
 
-.certificate-card .btn {
+.badge {
   display: inline-block;
-  margin-bottom: 15px;
-  background-color: #4e9eff;
+  background: #1e1e3f;
+  color: #a0c4ff;
+  font-size: 0.75em;
+  padding: 4px 10px;
+  margin: 3px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-view {
+  background: linear-gradient(to right, #7f5af0, #63c5ea);
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-.certificate-card .btn:hover {
-  background-color: #367bdc;
+.btn-view:hover {
+  background: linear-gradient(to right, #5b35e6, #4bb7d6);
 }
+
 .contact {
   padding: 60px 50px;
   text-align: center;
