@@ -273,9 +273,9 @@ button:hover {
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: 1.25rem; /* or try 1rem for even tighter layout */
 }
+
 
 
 .certificate-card {
