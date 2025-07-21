@@ -276,17 +276,17 @@ button:hover {
 }
 
 .certificate-card {
-  background: linear-gradient(145deg, #161632, #0f0f25);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
   border-radius: 16px;
-  padding: 24px;
-  max-width: 320px;
-  box-shadow: 0 0 10px rgba(91, 33, 182, 0.25);
-  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s, background 0.3s;
 }
 
 .certificate-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(91, 33, 182, 0.5);
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .certificate-content h3 {
@@ -306,28 +306,28 @@ button:hover {
 }
 
 .badge {
-  display: inline-block;
-  background: #1e1e3f;
-  color: #a0c4ff;
-  font-size: 0.75em;
-  padding: 4px 10px;
-  margin: 3px;
-  border-radius: 8px;
-  font-weight: 500;
+  background: #2e2e4e;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
 }
 
 .btn-view {
-  background: linear-gradient(to right, #7f5af0, #63c5ea);
-  color: white;
+  background: linear-gradient(90deg, #7f66ff, #7fdfff);
+  color: black;
+  font-weight: bold;
   padding: 8px 16px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
   transition: background 0.3s ease;
 }
 
 .btn-view:hover {
-  background: linear-gradient(to right, #5b35e6, #4bb7d6);
+  opacity: 0.8;
 }
 
 .contact {
