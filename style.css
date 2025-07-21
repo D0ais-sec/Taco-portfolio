@@ -99,6 +99,13 @@ button {
 button:hover {
   opacity: 0.8;
 }
+.button-group {
+  display: flex;
+  gap: 12px; /* space between buttons */
+  margin-top: 20px;
+  flex-wrap: wrap; /* optional: wraps on small screens */
+}
+
 
 .orbit {
   position: relative;
