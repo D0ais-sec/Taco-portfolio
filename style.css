@@ -14,9 +14,10 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; ← REMOVE THIS */
   position: relative;
 }
+
 
 header {
   display: flex;
