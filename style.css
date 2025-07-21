@@ -115,14 +115,14 @@ button:hover {
   filter: drop-shadow(0 0 5px #999);
 }
 
-.react { top: 0; left: 50%; transform: translate(-50%, -50%); }
-.js { top: 25%; right: 0; transform: translate(50%, -50%); }
-.firebase { top: 50%; right: 0; transform: translate(50%, -50%); }
-.nextjs { bottom: 25%; right: 0; transform: translate(50%, 50%); }
-.ts { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
-.aws { bottom: 25%; left: 0; transform: translate(-50%, 50%); }
-.github { top: 50%; left: 0; transform: translate(-50%, -50%); }
-.css { top: 25%; left: 0; transform: translate(-50%, -50%); }
+.mercury   { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.venus     { top: 25%; right: 0; transform: translate(50%, -50%); }
+.earth { top: 50%; right: 0; transform: translate(50%, -50%); }
+.mars      { bottom: 25%; right: 0; transform: translate(50%, 50%); }
+.jupiter   { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+.saturn    { bottom: 25%; left: 0; transform: translate(-50%, 50%); }
+.uranus    { top: 50%; left: 0; transform: translate(-50%, -50%); }
+.neptune   { top: 25%; left: 0; transform: translate(-50%, -50%); }
 
 @keyframes rotate {
   from { transform: rotate(0deg); }
