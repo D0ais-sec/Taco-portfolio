@@ -105,29 +105,33 @@ button:hover {
   width: 300px;
   height: 300px;
   margin-right: 60px;
-  animation: rotate 20s linear infinite;
 }
 
 .icon {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 -120px; /* distance from center */
   width: 40px;
   height: 40px;
   filter: drop-shadow(0 0 5px #999);
 }
 
-.mercury   { top: 0; left: 50%; transform: translate(-50%, -50%); }
-.venus     { top: 25%; right: 0; transform: translate(50%, -50%); }
-.earth { top: 50%; right: 0; transform: translate(50%, -50%); }
-.mars      { bottom: 25%; right: 0; transform: translate(50%, 50%); }
-.jupiter   { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
-.saturn    { bottom: 25%; left: 0; transform: translate(-50%, 50%); }
-.uranus    { top: 50%; left: 0; transform: translate(-50%, -50%); }
-.neptune   { top: 25%; left: 0; transform: translate(-50%, -50%); }
+/* Give each planet a unique animation */
+.mercury  { animation: orbit 4s linear infinite; transform-origin: 0 -50px; }
+.venus    { animation: orbit 6s linear infinite; transform-origin: 0 -70px; }
+.earth    { animation: orbit 8s linear infinite; transform-origin: 0 -90px; }
+.mars     { animation: orbit 10s linear infinite; transform-origin: 0 -110px; }
+.jupiter  { animation: orbit 12s linear infinite; transform-origin: 0 -130px; }
+.saturn   { animation: orbit 14s linear infinite; transform-origin: 0 -150px; }
+.uranus   { animation: orbit 16s linear infinite; transform-origin: 0 -170px; }
+.neptune  { animation: orbit 18s linear infinite; transform-origin: 0 -190px; }
 
-@keyframes rotate {
+@keyframes orbit {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to   { transform: rotate(360deg); }
 }
+
 .skills {
   padding: 60px 50px;
   text-align: center;
