@@ -259,7 +259,7 @@ button:hover {
 /* === Certificates Section Styled Like Projects === */
 .certificates {
   padding: 60px 20px;
-  background: linear-gradient(90deg, #66ffff, #bb66ff);
+  background: #090920;
   color: #ffffff;
   text-align: center;
 }
