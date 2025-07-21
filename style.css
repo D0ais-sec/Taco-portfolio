@@ -307,15 +307,16 @@ button:hover {
 .certificate-card {
   background-color: #0f0f1c;
   border-radius: 24px;
-  padding: 24px;
   width: 300px;
-  aspect-ratio: 3 / 4; /* Ensures consistent size */
+  height: 400px; /* fixed height */
   box-shadow: 0 0 15px rgba(127, 90, 240, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative; /* So absolute button positioning works */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
+
 
 .certificate-card:hover {
   transform: translateY(-8px);
