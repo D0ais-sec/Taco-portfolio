@@ -257,39 +257,38 @@ button:hover {
   opacity: 0.8;
 }
 .certificates {
-  padding: 60px 50px;
+  padding: 40px 20px;
+  background-color: #1e1e2f;
+  color: #fff;
   text-align: center;
 }
 
 .certificates h2 {
-  font-size: 2.5rem;
+  font-size: 2.2em;
   margin-bottom: 30px;
-  background: linear-gradient(90deg, #66ffff, #bb66ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.25rem; /* or try 1rem for even tighter layout */
+  gap: 20px;
+  justify-items: center;
 }
 
 
 
 .certificate-card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s, background 0.3s;
-  max-width: 300px;
+  background-color: #2e2e4e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 320px;
 }
 
 .certificate-card:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
 }
 
 .certificate-card img {
@@ -298,25 +297,30 @@ button:hover {
   margin-bottom: 15px;
 }
 
-.certificate-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.certificate-card p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-bottom: 10px;
+.certificate-card h3 {
+  font-size: 1.1em;
+  margin: 15px;
 }
 
 .certificate-card .btn {
-  padding: 6px 10px;
-  font-size: 0.85rem;
-  background: linear-gradient(90deg, #7f66ff, #7fdfff);
-  color: black;
+  display: inline-block;
+  margin-bottom: 15px;
+  background-color: #4e9eff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.certificate-card .btn:hover {
+  background-color: #367bdc;
 }
 .contact {
   padding: 60px 50px;
