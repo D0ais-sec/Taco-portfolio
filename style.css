@@ -256,7 +256,7 @@ button:hover {
 .buttons .btn:hover {
   opacity: 0.8;
 }
-/* === Certificate Section Styling === */
+/* Certificate Section */
 .certificate-section {
   margin-top: 80px;
   text-align: center;
@@ -268,21 +268,22 @@ button:hover {
   margin-bottom: 40px;
 }
 
+/* Card grid layout */
 .certificates-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
 }
 
+/* Certificate card */
 .certificate-card {
   background-color: #0f0f1c;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 24px;
   width: 300px;
-  box-shadow: 0 0 15px rgba(127, 90, 240, 0.15);
+  box-shadow: 0 0 15px rgba(127, 90, 240, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -294,30 +295,33 @@ button:hover {
 }
 
 .certificate-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
 }
 
 .certificate-card p {
   font-size: 0.95rem;
-  opacity: 0.8;
+  color: #ccc;
   margin-bottom: 20px;
 }
 
+/* Button style */
 .btn-view {
+  display: inline-block;
   background: linear-gradient(to right, #7f5af0, #63c5ea);
   color: white;
-  padding: 10px 18px;
+  padding: 10px 20px;
   border-radius: 8px;
-  text-align: center;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-view:hover {
-  background: linear-gradient(to right, #5b35e6, #4bb7d6);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(127, 90, 240, 0.5);
 }
+
 
 
 .contact {
