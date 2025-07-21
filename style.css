@@ -273,22 +273,26 @@ button:hover {
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  justify-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
+
 .certificate-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   padding: 20px;
   border-radius: 16px;
   backdrop-filter: blur(6px);
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
   max-width: 300px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .certificate-card:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(128, 0, 255, 0.4);
 }
 
 .certificate-card img {
@@ -307,6 +311,7 @@ button:hover {
   color: #ccc;
   margin-bottom: 10px;
 }
+
 
 .certificate-card .btn {
   padding: 6px 10px;
