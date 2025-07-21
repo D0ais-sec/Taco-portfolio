@@ -262,33 +262,6 @@ button:hover {
   text-align: center;
   color: white;
 }
-/* Add this to extend your existing styles */
-.has-bg {
-  background-size: cover;             /* fills card but keeps aspect */
-  background-position: center;        /* centers the image */
-  background-repeat: no-repeat;
-  background-color: #0f0f1c;          /* fallback background */
-  position: relative;
-  overflow: hidden;
-  color: white;
-}
-.cert-img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
-.card-overlay {
-  background-color: rgba(15, 15, 28, 0.75); /* semi-transparent dark overlay */
-  padding: 24px;
-  border-radius: 24px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 
 .section-title {
   font-size: 2rem;
@@ -307,16 +280,14 @@ button:hover {
 .certificate-card {
   background-color: #0f0f1c;
   border-radius: 24px;
+  padding: 24px;
   width: 300px;
-  height: 400px; /* fixed height */
   box-shadow: 0 0 15px rgba(127, 90, 240, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; /* So absolute button positioning works */
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 .certificate-card:hover {
   transform: translateY(-8px);
@@ -351,7 +322,8 @@ button:hover {
   box-shadow: 0 0 12px rgba(127, 90, 240, 0.5);
 }
 
-/* CONTACT PART */
+
+
 .contact {
   padding: 60px 50px;
   text-align: center;
