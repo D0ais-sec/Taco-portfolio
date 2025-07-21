@@ -268,68 +268,69 @@ button:hover {
   margin-bottom: 40px;
 }
 
-.certificate-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+/* === Certificate Section Styling === */
+.certificate-section {
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  justify-items: center;
+  justify-content: center;
 }
 
 .certificate-card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 16px;
-  text-align: center;
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s, background 0.3s;
-  
+  background-color: #0f0f1c;
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(127, 90, 240, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .certificate-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(127, 90, 240, 0.35);
 }
 
-.certificate-content h3 {
-  font-size: 1.2em;
-  font-weight: bold;
+.certificate-card h3 {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.certificate-content p {
-  font-size: 0.95em;
-  color: #ccc;
-  margin-bottom: 12px;
-}
-
-.badge-group {
-  margin-bottom: 16px;
-}
-
-.badge {
-  display: inline-block;
-  background: linear-gradient(90deg, #7f66ff, #7fdfff);
-  color: black;
-  font-size: 0.75em;
-  padding: 4px 10px;
-  margin: 3px;
-  border-radius: 8px;
-  font-weight: bold;
+.certificate-card p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
 .btn-view {
-  background: linear-gradient(90deg, #7f66ff, #7fdfff);
-  color: black;
-  font-weight: bold;
-  padding: 8px 16px;
+  background: linear-gradient(to right, #7f5af0, #63c5ea);
+  color: white;
+  padding: 10px 18px;
   border-radius: 8px;
+  text-align: center;
   text-decoration: none;
+  font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .btn-view:hover {
-  opacity: 0.8;
+  background: linear-gradient(to right, #5b35e6, #4bb7d6);
 }
+
 
 .contact {
   padding: 60px 50px;
