@@ -278,15 +278,15 @@ button:hover {
 
 /* Certificate card */
 .certificate-card {
-  background-color: #0f0f1c;
-  border-radius: 24px;
-  padding: 24px;
-  width: 300px;
-  box-shadow: 0 0 15px rgba(127, 90, 240, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+  color: white;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
 }
 
 .certificate-card:hover {
