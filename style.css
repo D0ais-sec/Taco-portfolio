@@ -306,14 +306,14 @@ button:hover {
 }
 
 .badge {
-  background: #2e2e4e;
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
+  display: inline-block;
+  background: linear-gradient(90deg, #7f66ff, #7fdfff);
+  color: black;
+  font-size: 0.75em;
+  padding: 4px 10px;
+  margin: 3px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 .btn-view {
