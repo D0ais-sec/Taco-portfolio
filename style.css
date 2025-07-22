@@ -418,20 +418,11 @@ button:hover {
 
 .card-image {
   height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #111;
-  overflow: hidden;
-  border-radius: 12px; /* Optional rounded corners */
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
-.card-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover; /* or 'cover' if you prefer cropping */
-}
-
 
 .card-content {
   padding: 20px;
