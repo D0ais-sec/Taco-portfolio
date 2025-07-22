@@ -418,11 +418,11 @@ button:hover {
 
 .card-image {
   height: 180px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
 
 .card-content {
   padding: 20px;
